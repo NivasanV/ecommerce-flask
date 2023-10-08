@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Products</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="{{ url_for('static', filename = 'imgs/icon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="navbar"> 
                 <div class="logo">
-                    <a href="/"><img id="logo" src="imgs/blue-store.PNG" width="125px"></a>
+                    <a href="/"><img id="logo" src="{{ url_for('static', filename = 'imgs/blue-store.png') }}" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -29,8 +29,8 @@
                         <li><a href="/account">Account</a></li>
                     </ul>
                 </nav>
-                <a href="/cart"><img src="imgs/cart.png" width="30px" height="30px"></a>
-                <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
+                <a href="/cart"><img src="{{ url_for('static', filename = 'imgs/cart.png') }}" width="30px" height="30px"></a>
+                <img src="{{ url_for('static', filename = 'imgs/menu.png') }}" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
 
@@ -51,8 +51,10 @@
 
         <div class="row">
             <div class="col-4">
-                <a href="/product-1-details"><img src="imgs-copy/product-1.jpg" height="315"></a>
-                <a href="/product-1-details"><h4>Red Printed T-Shirt</h4></a>
+                <a href="/product-1-details"><img src="{{ url_for('static', filename = 'imgs/product-1.jpg') }}" height="317"></a>
+                <a href="/product-1-details">
+                    <h4><b>Friends</b><br>Red Printed T-Shirt</h4>
+                </a>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -63,8 +65,8 @@
                 <p>₹499.00</p>
             </div>
             <div class="col-4">
-                <img src="imgs/product-2.jpg" alt="">
-                <h4>XHR Men Black Running Shoe</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-2.jpg') }}" alt="">
+                <h4><b>HRX</b><br>Men Black Running Shoes</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -75,8 +77,8 @@
                 <p>₹1099.00</p>
             </div>
             <div class="col-4">
-                <img src="imgs/product-3.jpg" alt="">
-                <h4>Grey Regular Fit Trackpants</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-3.jpg') }}" alt="">
+                <h4><b>HRX</b><br>Grey Trackpants</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -87,8 +89,8 @@
                 <p>₹999.00</p>
             </div>
             <div class="col-4">
-                <img src="imgs/product-4.jpg" alt="">
-                <h4>PUMA Pique Polo</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-4.jpg') }}" height="317">
+                <h4><b>Bewakoof</b><br>Block Polo T-shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -102,8 +104,8 @@
 
         <div class="row">
             <div class="col-4">
-                <img src="imgs/product-5.jpg" alt="">
-                <h4>HRX Grey High-Top Shoes</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-5.jpg') }}" alt="">
+                <h4><b>HRX</b><br>Grey High-Top Shoes</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -114,8 +116,20 @@
                 <p>₹1199.00</p>
             </div>
             <div class="col-4">
-                <img src="imgs/product-6.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-6.jpg') }}" height="317">
+                <h4><b>METRONAUT</b><br>Women Bodycon Dress</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+                <p>₹899.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename = 'imgs/product-7.jpg') }}" alt="">
+                <h4><b>HRX</b><br>Ankle Socks</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -123,11 +137,11 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-solid fa-star-half-stroke"></i>
                 </div>
-                <p>₹500.00</p>
+                <p>₹349.00</p>
             </div>
             <div class="col-4">
-                <img src="imgs/product-7.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-8.jpg') }}" alt="">
+                <h4><b>Fossil</b><br>Mens Minimalist Watch</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -135,25 +149,50 @@
                     <i class="fa fa-solid fa-star-half-stroke"></i>
                     <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹450.00</p>
-            </div>
-            <div class="col-4">
-                <img src="imgs/product-8.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
-                </div>
-                <p>₹450.00</p>
+                <p>₹1599.00</p>
             </div>
         </div>
+
         <div class="row">
             <div class="col-4">
-                <img src="imgs/product-9.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
+                <img src="{{ url_for('static', filename = 'imgs/product-9.jpg') }}" alt="">
+                <h4><b>Roadster</b><br>Black wrist Watch</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₹1799.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename = 'imgs/product-10.jpg') }}" alt="">
+                <h4><b>HRX</b><br>Walking ShoesFor Men</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+                <p>₹699.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename = 'imgs/product-11.jpg') }}" alt="">
+                <h4><b>Roadster</b><br>crocs Men's Sneaker</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>₹749.00</p>
+            </div>
+            <div class="col-4">
+                <img src="{{ url_for('static', filename = 'imgs/product-12.jpg') }}" alt="">
+                <h4><b>Nike</b><br>Yoga Joggers</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -161,43 +200,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹450.00</p>
-            </div>
-            <div class="col-4">
-                <img src="imgs/product-10.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
-                </div>
-                <p>₹500.00</p>
-            </div>
-            <div class="col-4">
-                <img src="imgs/product-11.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
-                    <i class="fa fa-regular fa-star"></i>
-                </div>
-                <p>₹450.00</p>
-            </div>
-            <div class="col-4">
-                <img src="imgs/product-12.jpg" alt="">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
-                </div>
-                <p>₹450.00</p>
+                <p>₹799.00</p>
             </div>
         </div>
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
-    <link rel="icon" href="{{ url_for('static', filename = 'style.css') }}">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="{{ url_for('static', filename = 'imgs/icon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="navbar"> 
                 <div class="logo">
-                    <a href="/"><img id="logo" src="imgs/blue-store.PNG" width="125px"></a>
+                    <a href="/"><img id="logo" src="{{ url_for('static', filename = 'imgs/blue-store.PNG') }}" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -29,8 +29,8 @@
                         <li><a href="/account">Account</a></li>
                     </ul>
                 </nav>
-                <a href="/cart"><img src="imgs/cart.png" width="30px" height="30px"></a>
-                <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
+                <a href="/cart"><img src="{{ url_for('static', filename = 'imgs/cart.png') }}" width="30px" height="30px"></a>
+                <img src="{{ url_for('static', filename = 'imgs/menu.png') }}" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
 
@@ -39,20 +39,20 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="imgs-copy/gallery-1.jpg" width="100%" id="productImg">
+                <img src="{{ url_for('static', filename = 'imgs/gallery-1.jpg') }}" width="100%" id="productImg">
 
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="imgs-copy/gallery-1.jpg" width="100%" class="small-img">
+                        <img src="{{ url_for('static', filename = 'imgs/gallery-1.jpg') }}" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="imgs-copy/gallery-2.jpg" width="100%" class="small-img">
+                        <img src="{{ url_for('static', filename = 'imgs/gallery-2.jpg') }}" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="imgs-copy/gallery-3.jpg" width="100%" class="small-img">
+                        <img src="{{ url_for('static', filename = 'imgs/gallery-3.jpg') }}" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="imgs-copy/gallery-4.jpg" width="100%" class="small-img">
+                        <img src="{{ url_for('static', filename = 'imgs/gallery-4.jpg') }}" width="100%" class="small-img">
                     </div>
                 </div>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
-    <link rel="icon" href="imgs/icon.png">
+    <link rel="icon" href="{{ url_for('static', filename = 'imgs/icon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,12 +29,12 @@
                         <li><a href="/account">Account</a></li>
                     </ul>
                 </nav>
-                <a href="/cart"><img src="imgs/cart.png" width="30px" height="30px"></a>
-                <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
+                <a href="/cart"><img src="{{ url_for('static', filename = 'imgs/cart.png') }}" width="30px" height="30px"></a>
+                <img src="{{ url_for('static', filename = 'imgs/menu.png') }}" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
-                    <img src="{{ url_for('static', filename = 'imgs-copy/image1.png') }}" alt="">
+                    <img src="{{ url_for('static', filename = 'imgs/image1.png') }}" alt="">
                 </div>
                 <div class="col-2">
                     <h1>Give Your Workout<br> A New Style!</h1>
@@ -71,7 +71,7 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <a href="/product-1-details"><img src="{{ url_for('static', filename = 'imgs-copy/product-1.jpg') }}" height="317"></a>
+                <a href="/product-1-details"><img src="{{ url_for('static', filename = 'imgs/product-1.jpg') }}" height="317"></a>
                 <a href="/product-1-details">
                     <h4><b>Friends</b><br>Red Printed T-Shirt</h4>
                 </a>
@@ -109,7 +109,7 @@
                 <p>₹999.00</p>
             </div>
             <div class="col-4">
-                <img src="{{ url_for('static', filename = 'imgs-copy/product-4.jpg') }}" height="317">
+                <img src="{{ url_for('static', filename = 'imgs/product-4.jpg') }}" height="317">
                 <h4><b>Bewakoof</b><br>Block Polo T-shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -137,16 +137,16 @@
                 <p>₹1199.00</p>
             </div>
             <div class="col-4">
-                <img src="{{ url_for('static', filename = 'imgs-copy/product-6.jpg') }}" height="317">
+                <img src="{{ url_for('static', filename = 'imgs/product-6.jpg') }}" height="317">
                 <h4><b>METRONAUT</b><br>Women Bodycon Dress</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹500.00</p>
+                <p>₹899.00</p>
             </div>
             <div class="col-4">
                 <img src="{{ url_for('static', filename = 'imgs/product-7.jpg') }}" alt="">
@@ -155,10 +155,10 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                     <i class="fa fa-solid fa-star-half-stroke"></i>
-                    <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹450.00</p>
+                <p>₹349.00</p>
             </div>
             <div class="col-4">
                 <img src="{{ url_for('static', filename = 'imgs/product-8.jpg') }}" alt="">
@@ -167,12 +167,13 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
                     <i class="fa fa-solid fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹450.00</p>
+                <p>₹1599.00</p>
             </div>
         </div>
+        
         <div class="row">
             <div class="col-4">
                 <img src="{{ url_for('static', filename = 'imgs/product-9.jpg') }}" alt="">
@@ -182,9 +183,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-regular fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
                 </div>
-                <p>₹450.00</p>
+                <p>₹1799.00</p>
             </div>
             <div class="col-4">
                 <img src="{{ url_for('static', filename = 'imgs/product-10.jpg') }}" alt="">
@@ -193,10 +194,10 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹500.00</p>
+                <p>₹699.00</p>
             </div>
             <div class="col-4">
                 <img src="{{ url_for('static', filename = 'imgs/product-11.jpg') }}" alt="">
@@ -205,10 +206,10 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
                     <i class="fa fa-solid fa-star-half-stroke"></i>
-                    <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹450.00</p>
+                <p>₹749.00</p>
             </div>
             <div class="col-4">
                 <img src="{{ url_for('static', filename = 'imgs/product-12.jpg') }}" alt="">
@@ -218,9 +219,9 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
-                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                    <i class="fa fa-regular fa-star"></i>
                 </div>
-                <p>₹450.00</p>
+                <p>₹799.00</p>
             </div>
         </div>
     </div>
@@ -239,7 +240,7 @@
                         (than Mi Band 3) AMLOED color full-touch display 
                         with adjustable brightness, so everything is clear as can be.
                     </small><br>
-                    <a href="" class="btn">Buy now <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#" class="btn">Buy now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -353,7 +354,7 @@
                     </ul>
                 </div>
                 <div class="footer-col-4">
-                    <h3>Fuollow us</h3>
+                    <h3>Follow us</h3>
                     <ul>
                         <li>Facebook</li>
                         <li>X</li>
