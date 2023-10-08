@@ -18,7 +18,7 @@
         <div class="container">
             <div class="navbar"> 
                 <div class="logo">
-                    <a href="/"><img id="logo" src="imgs/blue-store.PNG" width="125px"></a>
+                    <a href="/"><img id="logo" src="{{ url_for('static', filename = 'imgs/blue-store.png') }}" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
@@ -29,7 +29,7 @@
                         <li><a href="/account">Account</a></li>
                     </ul>
                 </nav>
-                <a href="/cart"><img src="imgs/cart.png" width="30px" height="30px"></a>
+                <a href="/cart"><img src="{{ url_for('static', filename = 'imgs/cart.png') }}" width="30px" height="30px"></a>
                 <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
@@ -47,7 +47,7 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="imgs-copy/buy-1.jpg" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs-copy/buy-1.jpg') }}" alt="">
                         <div>
                             <p>Red Printed TShirt</p>
                             <small>Price: ₹499.00</small>
@@ -64,7 +64,7 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="imgs/buy-2.jpg" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs/buy-2.jpg') }}" alt="">
                         <div>
                             <p>XHR Men Black Running Shoe</p>
                             <small>Price: ₹1099.00</small>
@@ -79,7 +79,7 @@
             <tr>
                 <td>
                     <div class="cart-info">
-                        <img src="imgs/buy-3.jpg" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs/buy-3.jpg') }}" alt="">
                         <div>
                             <p>Grey Regular Fit Trackpants</p>
                             <small>Price: ₹999.00</small>
@@ -124,12 +124,12 @@
                     <h3>Download Our App</h3>
                     <p>Download App for Android and ios mobile phone.</p>
                     <div class="app-logo">
-                        <img src="imgs/play-store.png" alt="">
-                        <img src="imgs/app-store.png" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs/play-store.png') }}" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs/app-store.png') }}" alt="">
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="imgs/blue-store.PNG" >
+                    <img src="{{ url_for('static', filename = 'imgs/blue-store.png') }}" >
                     <p>Our Purpose is to Sustainably Make the Pleasure and
                         Benefits of Sports Accessible to the Many
                     </p>
