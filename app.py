@@ -21,5 +21,9 @@ def account():
 def cart():
    return render_template('cart.html')
 
+@app.route('/account-test')
+def account_test():
+   return render_template('account-test.html')
+
 if __name__ == '__main__':
    app.run(debug = True)
