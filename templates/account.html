@@ -18,18 +18,18 @@
         <div class="container">
             <div class="navbar"> 
                 <div class="logo">
-                    <a href="index.html"><img id="logo" src="imgs/blue-store.PNG" width="125px"></a>
+                    <a href="/"><img id="logo" src="{{ url_for('static', filename = 'imgs/blue-store.PNG') }}" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products">Products</a></li>
+                        <li><a href="/#about">About</a></li>
                         <li><a href="#contact">Cantact</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="/account">Account</a></li>
                     </ul>
                 </nav>
-                <a href="cart.html"><img src="imgs/cart.png" width="30px" height="30px"></a>
+                <a href="/cart"><img src="{{ url_for('static', filename = 'imgs/cart.png') }}" width="30px" height="30px"></a>
                 <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img src="imgs-copy/account-page.png" width="500px">
+                    <img src="{{ url_for('static', filename = 'imgs-copy/account-page.png') }}" width="500px">
                 </div>
 
                 <div class="col-2">
@@ -79,12 +79,12 @@
                     <h3>Download Our App</h3>
                     <p>Download App for Android and ios mobile phone.</p>
                     <div class="app-logo">
-                        <img src="imgs/play-store.png" alt="">
-                        <img src="imgs/app-store.png" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs/play-store.png') }}" alt="">
+                        <img src="{{ url_for('static', filename = 'imgs/app-store.png') }}" alt="">
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="imgs/blue-store.PNG" >
+                    <img src="{{ url_for('static', filename = 'imgs/blue-store.png') }}" >
                     <p>Our Purpose is to Sustainably Make the Pleasure and
                         Benefits of Sports Accessible to the Many
                     </p>

@@ -18,18 +18,18 @@
         <div class="container">
             <div class="navbar"> 
                 <div class="logo">
-                    <a href="index.html"><img id="logo" src="{{ url_for('static', filename = 'imgs/blue-store.PNG') }}" width="125px"></a>
+                    <a href="/"><img id="logo" src="{{ url_for('static', filename = 'imgs/blue-store.PNG') }}" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products">Products</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Cantact</a></li>
-                        <li><a href="account.html">Account</a></li>
+                        <li><a href="/account">Account</a></li>
                     </ul>
                 </nav>
-                <a href="cart.html"><img src="imgs/cart.png" width="30px" height="30px"></a>
+                <a href="/cart"><img src="imgs/cart.png" width="30px" height="30px"></a>
                 <img src="imgs/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
@@ -43,7 +43,7 @@
                         consistency. <br>Consistent hard work gains success. greatness
                         will come.
                     </p>
-                    <a href="products.html" class="btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="/products" class="btn">Explore Now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -71,8 +71,8 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <a href="product-details.html"><img src="imgs-copy/product-1.jpg" height="317"></a>
-                <a href="product-details.html">
+                <a href="/product-1-details"><img src="imgs-copy/product-1.jpg" height="317"></a>
+                <a href="/product-1-details">
                     <h4><b>Friends</b><br>Red Printed T-Shirt</h4>
                 </a>
                 <div class="rating">
