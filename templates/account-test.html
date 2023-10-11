@@ -52,16 +52,16 @@
                         </div>
 
                         <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                            <input type="log_email" placeholder="Email">
+                            <input type="log_password" placeholder="Password">
                             <button type="submit" class="btn">Login</button>
                             <a href="#">Forgot Password?</a>
                         </form>
 
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                        <form id="RegForm" onsubmit="register(event)">
+                            <input id="reg_user_name" type="text" placeholder="Username">
+                            <input id="reg_email" type="email" placeholder="Email">
+                            <input id="reg_password" type="password" placeholder="Password">
                             <button type="submit" class="btn">Register</button>
                         </form>
                     </div>
@@ -152,6 +152,9 @@
 
     </script>
 
+    <!------- js for Firebase conection ------->
+
+    <script type="module" src="{{ url_for('static', filename = 'reg.js') }}"></script>
 
 </body>
 </html>
