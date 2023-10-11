@@ -51,9 +51,9 @@
                             <hr id="Indicator">
                         </div>
 
-                        <form id="LoginForm">
-                            <input type="log_email" placeholder="Email">
-                            <input type="log_password" placeholder="Password">
+                        <form id="LoginForm" onsubmit="login(event)">
+                            <input id="log_email" type="email" placeholder="Email">
+                            <input id="log_password" type="password" placeholder="Password">
                             <button type="submit" class="btn">Login</button>
                             <a href="#">Forgot Password?</a>
                         </form>
@@ -155,6 +155,7 @@
     <!------- js for Firebase conection ------->
 
     <script type="module" src="{{ url_for('static', filename = 'reg.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename = 'login.js') }}"></script>
 
 </body>
 </html>
