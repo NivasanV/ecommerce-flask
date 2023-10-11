@@ -51,17 +51,17 @@
                             <hr id="Indicator">
                         </div>
 
-                        <form id="LoginForm">
-                            <input type="text" placeholder="Username">
-                            <input type="password" placeholder="Password">
+                        <form id="LoginForm" onsubmit="login(event)">
+                            <input id="log_email" type="email" placeholder="Email">
+                            <input id="log_password" type="password" placeholder="Password">
                             <button type="submit" class="btn">Login</button>
                             <a href="#">Forgot Password?</a>
                         </form>
 
-                        <form id="RegForm">
-                            <input type="text" placeholder="Username">
-                            <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                        <form id="RegForm" onsubmit="register(event)">
+                            <input id="reg_user_name" type="text" placeholder="Username">
+                            <input id="reg_email" type="email" placeholder="Email">
+                            <input id="reg_password" type="password" placeholder="Password">
                             <button type="submit" class="btn">Register</button>
                         </form>
                     </div>
@@ -152,6 +152,10 @@
 
     </script>
 
+    <!------- js for Firebase conection ------->
+
+    <script type="module" src="{{ url_for('static', filename = 'reg.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename = 'login.js') }}"></script>
 
 </body>
 </html>
